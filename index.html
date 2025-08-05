@@ -66,21 +66,24 @@
     <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
       <!-- Logo and Title Left -->
       <div class="flex items-center gap-3 mb-4 md:mb-0">
-        <a href="/" onclick="location.reload(); return false;" class="flex items-center group">
-          <img src="Dr-Ajay-Agrawal-Clinic-logo.png" alt="Dr. Ajay Agrawal Clinic Logo"
+        <a href="/" onclick="location.reload(); return false;" class="flex items-center group" aria-label="Go to homepage">
+          <img src="Dr-Ajay-Agrawal-Clinic-logo.png" alt="Dr. Ajay Agrawal Clinic Logo - Home"
                class="h-12 w-12 transition-transform duration-300 group-hover:scale-110 animate__animated animate__fadeInLeft" />
-          <span class="ml-2 text-2xl font-bold text-blue-900 group-hover:text-blue-700">Dr. Ajay Agrawal</span>
+          <!-- Changed to h1 for main heading -->
+          <h1 class="ml-2 text-2xl font-bold text-blue-900 group-hover:text-blue-700">Dr. Ajay Agrawal</h1>
         </a>
       </div>
       <!-- Buttons Right -->
       <div class="flex flex-col gap-2 w-full max-w-xs md:max-w-none md:flex-row md:w-auto md:gap-4 items-center">
         <a href="tel:9634274830"
-           class="bg-blue-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 text-center font-medium w-full md:w-auto">
+           class="bg-blue-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 text-center font-medium w-full md:w-auto"
+           style="color: #fff; background-color: #2563eb;" aria-label="Call Now">
            Call Now
         </a>
         <button
            onclick="document.getElementById('appointment-modal').classList.remove('hidden')"
-           class="bg-green-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-green-700 hover:scale-105 text-center font-medium w-full md:w-auto">
+           class="bg-green-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-green-700 hover:scale-105 text-center font-medium w-full md:w-auto"
+           style="color: #fff; background-color: #16a34a;" aria-label="Request Appointment">
            Request Appointment
         </button>
       </div>
@@ -168,24 +171,24 @@
       <div class="space-y-6">
         <!-- Replace first two reviews with images -->
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="jitendra-singh-review.png" alt="Review by Jitendra Singh"
+          <img src="jitendra-singh-review.png" alt="Google review screenshot by Jitendra Singh for Dr. Ajay Agrawal Clinic"
                class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" />
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="manoj-kumar-review.png" alt="Review by Manoj Kumar"
+          <img src="manoj-kumar-review.png" alt="Google review screenshot by Manoj Kumar for Dr. Ajay Agrawal Clinic"
                class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" />
         </div>
         <!-- Existing image reviews -->
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="tripti-chaturvedi-review.png" alt="Review by Tripti Chaturvedi"
+          <img src="tripti-chaturvedi-review.png" alt="Google review screenshot by Tripti Chaturvedi for Dr. Ajay Agrawal Clinic"
                class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" />
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="amitk-noriya-review.png" alt="Review by Amitk Noriya"
+          <img src="amitk-noriya-review.png" alt="Google review screenshot by Amitk Noriya for Dr. Ajay Agrawal Clinic"
                class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" />
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="uday-kumar-chaudhary-review.png" alt="Review by Uday Kumar Chaudhary"
+          <img src="uday-kumar-chaudhary-review.png" alt="Google review screenshot by Uday Kumar Chaudhary for Dr. Ajay Agrawal Clinic"
                class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" />
         </div>
       </div>
@@ -216,6 +219,8 @@
           src="https://www.google.com/maps?q=Dr.+Ajay+Agrawal+Clinic,+Mathura&output=embed"
           allowfullscreen
           loading="lazy"
+          title="Google Map showing Dr. Ajay Agrawal Clinic location"
+          aria-label="Google Map showing Dr. Ajay Agrawal Clinic location"
         ></iframe>
       </div>
     </div>
