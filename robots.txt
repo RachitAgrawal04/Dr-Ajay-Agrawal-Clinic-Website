@@ -1,0 +1,4 @@
+<!-- filepath: c:\Users\hp\Downloads\Clinic\Clinic Website\Testing Demo\robots.txt -->
+User-agent: *
+Allow: /
+Sitemap: https://dr-ajay-agrawal.netlify.app/sitemap.xml
