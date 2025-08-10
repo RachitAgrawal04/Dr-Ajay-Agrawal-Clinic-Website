@@ -10,16 +10,30 @@
   <meta property="og:description" content="Visit Dr. Ajay Agrawal Clinic in Aurangabad, Mathura for comprehensive medical care and personalized treatment.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dr-ajay-agrawal.netlify.app/">
-  <meta property="og:image" content="https://dr-ajay-agrawal.netlify.app/Dr-Ajay-Agrawal-Clinic-logo.png">
+  <meta property="og:image" content="https://dr-ajay-agrawal.netlify.app/Dr-Ajay-Agrawal-Clinic-logo.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dr. Ajay Agrawal Clinic - Compassionate Physician in Mathura">
   <meta name="twitter:description" content="Visit Dr. Ajay Agrawal Clinic in Aurangabad, Mathura for comprehensive medical care and personalized treatment.">
-  <meta name="twitter:image" content="https://dr-ajay-agrawal.netlify.app/Dr-Ajay-Agrawal-Clinic-logo.png">
+  <meta name="twitter:image" content="https://dr-ajay-agrawal.netlify.app/Dr-Ajay-Agrawal-Clinic-logo.webp">
   <title>Dr. Ajay Agrawal Clinic</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Preconnect & Preload for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Preload critical assets -->
+  <link rel="preload" href="Dr-Ajay-Agrawal-Clinic-logo.webp" as="image">
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Add Animate.css for easy animations -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Defer Animate.css -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></noscript>
+
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <!-- Schema.org Structured Data -->
@@ -28,7 +42,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": "Dr. Ajay Agrawal Clinic",
-    "image": "https://dr-ajay-agrawal.netlify.app/Dr-Ajay-Agrawal-Clinic-logo.png",
+    "image": "https://dr-ajay-agrawal.netlify.app/Dr-Ajay-Agrawal-Clinic-logo.webp",
     "description": "Compassionate care in Aurangabad, Mathura for all medical needs. Experienced M.D Physician providing personalized treatment.",
     "address": {
       "@type": "PostalAddress",
@@ -61,53 +75,36 @@
   </script>
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GCW1S18B87"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GCW1S18B87');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCW1S18B87"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GCW1S18B87');
+  </script>
 </head>
 <body class="font-inter bg-gray-50 text-gray-800">
   <!-- Header -->
   <header class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
-      <!-- Logo and Title Left -->
       <div class="flex items-center gap-3 mb-4 md:mb-0">
         <a href="/" onclick="location.reload(); return false;" class="flex items-center group" aria-label="Go to homepage">
-          <img src="Dr-Ajay-Agrawal-Clinic-logo.webp" alt="Dr. Ajay Agrawal Clinic Logo - Home"
+          <img src="Dr-Ajay-Agrawal-Clinic-logo.webp" alt="Dr. Ajay Agrawal Clinic Logo - Home" width="1024" height="1024"
                class="h-12 w-12 transition-transform duration-300 group-hover:scale-110 animate__animated animate__fadeInLeft" loading="lazy" />
-          <!-- Changed to h1 for main heading -->
           <h1 class="ml-2 text-2xl font-bold text-blue-900 group-hover:text-blue-700">Dr. Ajay Agrawal</h1>
         </a>
       </div>
-      <!-- Buttons Right -->
       <div class="flex flex-col gap-2 w-full max-w-xs md:max-w-none md:flex-row md:w-auto md:gap-4 items-center">
-        <a href="tel:9634274830"
-           class="bg-blue-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 text-center font-medium w-full md:w-auto"
-           style="color: #fff; background-color: #2563eb;" aria-label="Call Now">
-           Call Now
-        </a>
-        <button
-           onclick="document.getElementById('appointment-modal').classList.remove('hidden')"
-           class="bg-green-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-green-700 hover:scale-105 text-center font-medium w-full md:w-auto"
-           style="color: #fff; background-color: #16a34a;" aria-label="Request Appointment">
-           Request Appointment
-        </button>
+        <a href="tel:9634274830" class="bg-blue-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 text-center font-medium w-full md:w-auto" aria-label="Call Now">Call Now</a>
+        <button onclick="document.getElementById('appointment-modal').classList.remove('hidden')" class="bg-green-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-green-700 hover:scale-105 text-center font-medium w-full md:w-auto" aria-label="Request Appointment">Request Appointment</button>
       </div>
     </div>
-    <div class="text-xs text-gray-500 text-center py-1 bg-gray-50">
-      Call <strong>9634274830</strong> if any option doesn't work.
-    </div>
+    <div class="text-xs text-gray-500 text-center py-1 bg-gray-50">Call <strong>9634274830</strong> if any option doesn't work.</div>
     <div class="border-b border-gray-200"></div>
   </header>
 
   <!-- Appointment Modal -->
-  <div id="appointment-modal"
-     class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden animate__animated animate__fadeIn">
+  <div id="appointment-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden animate__animated animate__fadeIn">
     <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full relative">
       <button onclick="document.getElementById('appointment-modal').classList.add('hidden')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
       <h3 class="text-xl font-semibold mb-4">Request an Appointment</h3>
@@ -180,31 +177,25 @@
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h3 class="text-2xl font-semibold mb-6">What Our Patients Say</h3>
       <div class="space-y-6">
-        <!-- Replace first two reviews with images -->
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="jitendra-singh-review.webp" alt="Google review by Jitendra Singh for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
+          <img src="jitendra-singh-review.webp" alt="Google review by Jitendra Singh for Dr. Ajay Agrawal Clinic" width="796" height="174" class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="manoj-kumar-review.webp" alt="Google review by Manoj Kumar for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
-        </div>
-        <!-- Existing image reviews -->
-        <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="tripti-chaturvedi-review.webp" alt="Google review by Tripti Chaturvedi for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
+          <img src="manoj-kumar-review.webp" alt="Google review by Manoj Kumar for Dr. Ajay Agrawal Clinic" width="796" height="182" class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="amitk-noriya-review.webp" alt="Google review by Amitk Noriya for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
+          <img src="tripti-chaturvedi-review.webp" alt="Google review by Tripti Chaturvedi for Dr. Ajay Agrawal Clinic" width="791" height="182" class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="uday-kumar-chaudhary-review.webp" alt="Google review by Uday Kumar Chaudhary for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
+          <img src="amitk-noriya-review.webp" alt="Google review by Amitk Noriya for Dr. Ajay Agrawal Clinic" width="797" height="233" class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
+          <img src="uday-kumar-chaudhary-review.webp" alt="Google review by Uday Kumar Chaudhary for Dr. Ajay Agrawal Clinic" width="785" height="196" class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" />
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Contact Section -->
   <section class="bg-blue-50 py-12">
@@ -243,6 +234,3 @@
   </footer>
 </body>
 </html>
-
-
-
