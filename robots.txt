@@ -4,6 +4,6 @@ Allow: /
 # Primary sitemap (includes blog and main site)
 Sitemap: https://dr-ajay-agrawal.netlify.app/sitemap.xml
 
-# Helpful contact for web crawlers/issues
-# If you have a webmaster email, you can include (optional):
-# Contact: webmaster@yourdomain.com
+
+# Contact: agrawalanush4@gmail.com 
+
