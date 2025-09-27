@@ -72,8 +72,18 @@
       <h1 class="text-3xl font-extrabold leading-tight">Adolescent Mental Health: Early Warning Signs</h1>
 
       <figure class="mt-4">
-        <img src="https://source.unsplash.com/featured/1200x630?teen,mental-health" alt="Teenager with supportive parent discussing feelings" width="1200" height="630" class="w-full rounded border" loading="eager" decoding="async">
-        <figcaption class="text-xs text-gray-500 mt-2">Image: Unsplash</figcaption>
+        <picture>
+          <source type="image/webp" srcset="/assets/img/blog/adolescent-mental-health.webp 1200w, /assets/img/blog/adolescent-mental-health.webp 614w" sizes="(max-width: 640px) 100vw, 800px">
+          <!-- Fallback: use jpg if you added one; otherwise fallback to webp main file -->
+          <img
+          src="/assets/img/blog/adolescent-mental-health.webp"
+          srcset="/assets/img/blog/adolescent-mental-health.webp 614w, /assets/img/blog/adolescent-mental-health.webp 400w"
+          alt="Adolescent Mental Health"
+          width="1200" height="630"
+          class="w-full rounded border"
+          loading="eager"
+          decoding="async">
+        </picture>
       </figure>
 
       <p class="mt-3 text-gray-700">Teen years are a major transition. Some ups and downs are normal—but certain changes can signal a deeper struggle. Here’s how to spot early signs and support your teen effectively.</p>
