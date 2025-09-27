@@ -215,10 +215,8 @@
           aria-label="Call Now">
           Call Now
         </a>
-        <button onclick="document.getElementById('appointment-modal').classList.remove('hidden')"
-          class="bg-green-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-green-700 hover:scale-105 text-center font-medium w-full md:w-auto"
-          aria-label="Request Appointment">
-          Request Appointment
+        <button onclick="document.getElementById('appointment-modal').classList.remove('hidden')" id="request-appointment-btn" class="bg-green-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-green-700 hover:scale-105 text-center font-medium w-full md:w-auto"
+        aria-label="Request Appointment">  Request Appointment
         </button>
       </div>
     </div>
@@ -394,8 +392,57 @@
     <p class="text-xs text-gray-500">MD Physician | General Medicine in Mathura</p>
     <p class="text-xs"><a href="/blog/" class="text-blue-700 hover:underline">Blogs</a></p>
   </footer>
+  <!-- Analytics event handlers: call clicks and appointment open/submit (minimal) -->
+
+  <script>
+   (function(){
+    // Delegate tel: clicks and send call_click event
+    document.addEventListener('click', function(e){
+      try {
+        var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+        if (a && window.gtag) {
+          gtag('event', 'call_click', {
+            'event_category': 'engagement',
+            'event_label': a.getAttribute('href')
+          });
+        }
+
+        // Appointment open: button opening the modal (id fallback + aria-label)
+        var apptBtn = e.target.closest && e.target.closest('#request-appointment-btn, button[aria-label="Request Appointment"]');
+        if (apptBtn && window.gtag) {
+          gtag('event', 'appointment_open', {
+            'event_category': 'engagement',
+            'event_label': 'appointment_open'
+          });
+        }
+      } catch(err) {
+        console && console.warn && console.warn('gtag handler error', err);
+      }
+    }, false);
+
+    // Track appointment form submission inside modal
+    var apptForm = document.querySelector && document.querySelector('#appointment-modal form');
+    if (apptForm) {
+      apptForm.addEventListener('submit', function(){
+        try {
+          if (window.gtag) {
+            gtag('event', 'appointment_submit', {
+              'event_category': 'conversion',
+              'event_label': 'appointment_form'
+            });
+          }
+        } catch(err) {
+          console && console.warn && console.warn('gtag submit error', err);
+        }
+      });
+    }
+  })();
+
+  </script>
+  
 </body>
 </html>
+
 
 
 
