@@ -5,5 +5,4 @@ Allow: /
 Sitemap: https://dr-ajay-agrawal.netlify.app/sitemap.xml
 
 
-# Contact: agrawalanush4@gmail.com 
 
