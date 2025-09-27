@@ -116,5 +116,33 @@
       © 2025 Dr. Ajay Agrawal Clinic • <a href="/" class="text-blue-700">Home</a> • <a href="/blog/" class="text-blue-700">Blog</a> • <a href="/#contact" class="text-blue-700">Contact</a>
     </div>
   </footer>
+
+<script>
+// Delegated tracking for blog link clicks (minimal edits, no per-anchor changes required)
+(function(){
+  if (typeof window === 'undefined') return;
+  document.addEventListener('click', function (e) {
+    try {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      // Track only internal blog links
+      if (href.indexOf('/blog/') !== -1) {
+        var label = a.getAttribute('data-ga-label') || href.replace(/^.*\/(.+)$/, '$1').replace(/\.html$/, '').replace(/[^a-z0-9_-]/gi, '_');
+        if (typeof gtag === 'function') {
+          gtag('event', 'blog_click', {
+            'event_category': 'navigation',
+            'event_label': label,
+            'transport_type': 'beacon'
+          });
+        }
+      }
+    } catch (err) {
+      // fail silently
+      console && console.error && console.error(err);
+    }
+  }, false);
+})();
+</script>
 </body>
 </html>
