@@ -72,8 +72,18 @@
       <h1 class="text-3xl font-extrabold leading-tight">Stress Management Techniques for Working Professionals</h1>
 
       <figure class="mt-4">
-        <img src="https://source.unsplash.com/featured/1200x630?stress,work" alt="Professional taking a mindful break at work" width="1200" height="630" class="w-full rounded border" loading="eager" decoding="async">
-        <figcaption class="text-xs text-gray-500 mt-2">Image: Unsplash</figcaption>
+        <picture>
+          <source type="image/webp" srcset="/assets/img/blog/stress-management-professional.webp 1200w, /assets/img/blog/stress-management-professional.webp 614w" sizes="(max-width: 640px) 100vw, 800px">
+          <!-- Fallback: use jpg if you added one; otherwise fallback to webp main file -->
+          <img
+          src="/assets/img/blog/stress-management-professional.webp"
+          srcset="/assets/img/blog/stress-management-professional.webp 614w, /assets/img/blog/stress-management-professional.webp 400w"
+          alt="Stress management at work"
+          width="1200" height="630"
+          class="w-full rounded border"
+          loading="eager"
+          decoding="async">
+        </picture>
       </figure>
 
       <p class="mt-3 text-gray-700">You don’t need an hour to de-stress. Small, repeatable actions—done consistently—change how you feel and perform. Start with one or two from the list below.</p>
