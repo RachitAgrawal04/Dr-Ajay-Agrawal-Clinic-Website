@@ -63,26 +63,38 @@ Blog posts include:
 
 ```text
 .
-├── index.html
-├── blog/
-│   ├── index.html
-│   ├── adolescent-mental-health-early-warning-signs.html
-│   ├── preventive-health-checkups-annual.html
-│   ├── stress-management-working-professionals.html
-│   └── README.md
+├── index.html                  # Main homepage
+├── robots.txt                  # SEO crawling directives
+├── sitemap.xml                 # XML sitemap for search engines
+├── _headers                    # Netlify headers config
+├── google5c5b252759a6a7f1.html # Google Search Console verification
+├── README.md                   # This file
 ├── assets/
 │   └── img/
-│       └── blog/
+│       ├── logo/               # Branding assets
+│       │   ├── Dr-Ajay-Agrawal-Clinic-logo.png
+│       │   ├── Dr-Ajay-Agrawal-Clinic-logo.webp
+│       │   ├── favicon.png
+│       │   └── favicon.webp
+│       ├── reviews/            # Patient review screenshots
+│       │   ├── jitendra-singh-review.webp/.png
+│       │   ├── manoj-kumar-review.webp/.png
+│       │   ├── tripti-chaturvedi-review.webp/.png
+│       │   ├── amitk-noriya-review.webp/.png
+│       │   └── uday-kumar-chaudhary-review.webp/.png
+│       └── blog/               # Blog post images
 │           ├── adolescent-mental-health.webp
 │           ├── preventive-health-checkup.webp
-│           └── stress-management-professional.webp
-├── robots.txt
-├── sitemap.xml
-├── _headers.txt
-├── google5c5b252759a6a7f1.html
-├── favicon.png / favicon.webp
-├── Dr-Ajay-Agrawal-Clinic-logo.png / Dr-Ajay-Agrawal-Clinic-logo.webp
-└── review images (png/webp)
+│           ├── stress-management-professional.webp
+│           └── blood-test-results.png
+└── blog/
+    ├── index.html              # Blog listing page
+    ├── TEMPLATE.html           # Template for new blog posts
+    ├── README.md               # Blog publishing workflow
+    ├── adolescent-mental-health-early-warning-signs.html
+    ├── how-to-read-blood-test-results.html
+    ├── preventive-health-checkups-annual.html
+    └── stress-management-working-professionals.html
 ```
 
 ---
