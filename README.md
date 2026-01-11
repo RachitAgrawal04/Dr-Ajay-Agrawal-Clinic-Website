@@ -220,7 +220,6 @@ Follow `blog/README.md`. In short:
 
 ## Weaknesses (what’s missing / what can break)
 
-This section is intentionally detailed and candid — it’s the fastest path to “professional-grade”.
 
 ### 1) The appointment form is UI-only (no backend)
 
