@@ -1,49 +1,117 @@
-# Blog: Publishing Workflow
+# Blog Publishing Workflow
 
-This folder contains blog posts for "Dr. Ajay Agrawal Clinic". Use this short workflow to add or update posts.
+Quick guide for adding blog posts to Dr. Ajay Agrawal Clinic website.
 
-1) Create the post file
-- File path: `blog/your-post-slug.html` (use lowercase, hyphens for spaces).
-- Copy an existing post (e.g., `preventive-health-checkups-annual.html`) as a template.
+---
 
-2) Required metadata (head section)
-- title, canonical, description, keywords
-- Open Graph / Twitter meta (og:title, og:description, og:image)
-- JSON-LD `BlogPosting` schema with:
-  - headline, description, image, datePublished, dateModified, author (Dr. Ajay Agrawal), mainEntityOfPage
+## Adding a New Blog Post
 
-3) Featured image
-- Prefer self-hosted images in `/assets/img/blog/` (webp + fallback).
-- Provide responsive images using `srcset` and `loading="lazy"`.
-- If you temporarily use Unsplash hotlinks, later replace with local files for reliability and performance.
+### Step 1: Create the Post
 
-4) Hindi summary (required)
-- Add a short Hindi summary block near the top of each post using the snippet in `hindi-summaries.html` (or copy the small snippet below). Use `lang="hi"` and a clear heading (e.g., "संक्षेप (हिंदी)").
+1. Copy `TEMPLATE.html` → `your-post-slug.html`
+2. Use lowercase slugs with hyphens (e.g., `diabetes-management-tips.html`)
 
-5) Blog index
-- Add/update `blog/index.html` card for the new post:
-  - image, title, excerpt, author/date, read time.
-  - Link to the new post URL.
+### Step 2: Update Placeholders
 
-6) Sitemap & robots
-- Update `sitemap.xml` to include the new post URL and `lastmod` of the update.
-- Ensure `robots.txt` references `sitemap.xml`.
+Replace all `[PLACEHOLDER]` values in the template:
 
-7) Accessibility & SEO checklist
-- Alt text for images (descriptive).
-- Add `rel="canonical"` in head pointing to the post URL.
-- Use one H1 per page; use H2/H3 for structure.
-- Ensure the JSON-LD validates in Google's Rich Results Test.
+| Placeholder | Example |
+|-------------|---------|
+| `[ARTICLE_TITLE]` | Diabetes Management Tips for Daily Life |
+| `[SLUG]` | diabetes-management-tips |
+| `[META_DESCRIPTION]` | Practical tips for managing diabetes... (150-160 chars) |
+| `[IMAGE_NAME]` | diabetes-management (without .webp) |
+| `[YYYY-MM-DD]` | 2025-01-12 |
+| `[CATEGORY]` | Diabetes Care |
 
-8) Commit & PR
-- Branch naming: `blog/<slug>` or `blog-launch/<date>` (example: `blog/diabetes-care`).
-- PR title: `Add blog: <Post Title>` with a short summary.
-- Include screenshots if the post layout uses special images or embeds.
+### Step 3: Add Featured Image
 
-9) After merge
-- Submit the updated sitemap in Google Search Console (or wait for auto-crawl).
-- Optionally create a Google Business Profile post linking to the new article.
+1. Create/get image (1200x630 recommended)
+2. Convert to WebP format
+3. Save to `/assets/img/blog/[IMAGE_NAME].webp`
+4. Keep file size under 100KB for performance
 
-If you’d like, I can:
-- Open a PR that adds the README and Hindi summaries + update robots.xml/sitemap.
-- Convert Unsplash images to compressed local images and update `srcset`.
+### Step 4: Write Content
+
+- **Intro**: 2-3 sentences hook
+- **TL;DR box**: 3-5 key points
+- **Hindi summary**: ~50 words (use Google Translate + review)
+- **Main sections**: Use H2 for each section
+- **CTA section**: Customize for the topic
+
+### Step 5: Update Blog Index
+
+Add a card to `blog/index.html`:
+
+```html
+<article class="bg-white rounded-lg shadow border overflow-hidden">
+  <a href="/blog/[SLUG].html">
+    <img src="/assets/img/blog/[IMAGE_NAME].webp" alt="[IMAGE_ALT]" class="w-full" />
+  </a>
+  <div class="p-4">
+    <a href="/blog/[SLUG].html">
+      <h2 class="text-lg font-semibold">[TITLE]</h2>
+    </a>
+    <p class="text-sm text-gray-600 mt-1">[EXCERPT]</p>
+    <div class="text-xs text-gray-500 mt-2">By Dr. Ajay Agrawal • [DATE] • [READ_TIME]</div>
+  </div>
+</article>
+```
+
+### Step 6: Update Sitemap
+
+Add to `/sitemap.xml`:
+
+```xml
+<url>
+  <loc>https://dr-ajay-agrawal.netlify.app/blog/[SLUG].html</loc>
+  <lastmod>[YYYY-MM-DD]</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+```
+
+### Step 7: Deploy
+
+1. Commit changes
+2. Push to main branch
+3. Netlify auto-deploys
+
+### Step 8: Post-Deploy
+
+- [ ] Verify page loads correctly
+- [ ] Test schema with [Rich Results Test](https://search.google.com/test/rich-results)
+- [ ] Submit sitemap in Search Console (optional - auto-crawl works too)
+
+---
+
+## Schema Checklist
+
+Each blog post should have:
+
+- [x] `BlogPosting` schema with correct image URL
+- [x] `BreadcrumbList` schema for SERP breadcrumbs
+- [x] Canonical URL
+- [x] Open Graph meta tags
+- [x] Twitter Card meta tags
+
+---
+
+## Image Guidelines
+
+| Requirement | Value |
+|-------------|-------|
+| Format | WebP preferred |
+| Dimensions | 1200×630 (16:9) |
+| Max size | 100KB |
+| Alt text | Descriptive, keyword-rich |
+
+---
+
+## Content Guidelines
+
+- **Length**: 800-1500 words ideal
+- **Reading level**: 8th grade (accessible)
+- **Hindi summary**: Always include
+- **CTAs**: Call button + Message button
+- **Related posts**: Link 2-3 other articles

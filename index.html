@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-IN">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +12,10 @@
 
   <!-- Primary SEO -->
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="description" content="MD Physician in Aurangabad, Mathura for General Medicine, diabetes, hypertension, thyroid, infections and preventive care. Book appointment or call 9634274830 for same-day consultation." />
-  <meta name="keywords" content="doctor in Mathura, MD physician Mathura, general physician Aurangabad Mathura, Dr Ajay Agrawal, best physician Mathura, best doctor in Mathura, internal medicine Mathura, diabetes doctor Mathura, hypertension specialist Mathura, thyroid doctor Mathura, fever treatment Mathura, clinic near me Mathura, family doctor Mathura, general medicine Mathura, Aurangabad Mathura clinic, book doctor appointment Mathura, doctor Aurangabad Mathura" />
+  <meta name="description"
+    content="MD Physician in Aurangabad, Mathura for General Medicine, diabetes, hypertension, thyroid, infections and preventive care. Book appointment or call 9634274830 for same-day consultation." />
+  <meta name="keywords"
+    content="doctor in Mathura, MD physician Mathura, general physician Aurangabad Mathura, Dr Ajay Agrawal, best physician Mathura, best doctor in Mathura, internal medicine Mathura, diabetes doctor Mathura, hypertension specialist Mathura, thyroid doctor Mathura, fever treatment Mathura, clinic near me Mathura, family doctor Mathura, general medicine Mathura, Aurangabad Mathura clinic, book doctor appointment Mathura, doctor Aurangabad Mathura" />
   <meta name="author" content="Dr. Ajay Agrawal Clinic" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="theme-color" content="#1e40af" />
@@ -22,7 +25,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_IN" />
   <meta property="og:title" content="Dr Ajay Agrawal Clinic, Aurangabad Mathura | MD Physician & General Medicine" />
-  <meta property="og:description" content="Compassionate MD Physician care in Aurangabad, Mathura. General Medicine, diabetes, hypertension, thyroid, infections and preventive care. Call 9634274830." />
+  <meta property="og:description"
+    content="Compassionate MD Physician care in Aurangabad, Mathura. General Medicine, diabetes, hypertension, thyroid, infections and preventive care. Call 9634274830." />
   <meta property="og:url" content="https://dr-ajay-agrawal.netlify.app/" />
   <meta property="og:image" content="https://dr-ajay-agrawal.netlify.app/Dr-Ajay-Agrawal-Clinic-logo.png" />
   <meta property="og:image:alt" content="Dr. Ajay Agrawal Clinic Logo" />
@@ -30,27 +34,109 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dr Ajay Agrawal Clinic, Aurangabad Mathura | MD Physician & General Medicine">
-  <meta name="twitter:description" content="Compassionate MD Physician care in Aurangabad, Mathura. Book appointment or call 9634274830.">
+  <meta name="twitter:description"
+    content="Compassionate MD Physician care in Aurangabad, Mathura. Book appointment or call 9634274830.">
   <meta name="twitter:image" content="https://dr-ajay-agrawal.netlify.app/Dr-Ajay-Agrawal-Clinic-logo.png">
   <meta name="twitter:image:alt" content="Dr. Ajay Agrawal Clinic Logo">
 
-  <!-- Optional hints -->
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
-
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/webp" href="favicon.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: {
+            primary: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' },
+            accent: { 400: '#34d399', 500: '#10b981', 600: '#059669' }
+          }
+        }
+      }
+    }
+  </script>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.media='all'">
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
 
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  </noscript>
+    .glass {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -12px rgba(30, 64, 175, 0.25);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-accent {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      transition: all 0.3s ease;
+    }
+
+    .btn-accent:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -5px rgba(16, 185, 129, 0.5);
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      font-size: 24px;
+    }
+  </style>
 
   <!-- Structured Data: MedicalClinic + GBP sameAs -->
   <script type="application/ld+json">
@@ -71,379 +157,544 @@
       "postalCode": "281006",
       "addressCountry": "IN"
     },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Mathura, Uttar Pradesh"
-    },
+    "areaServed": { "@type": "AdministrativeArea", "name": "Mathura, Uttar Pradesh" },
     "telephone": "+91-9634274830",
     "email": "agrawalanush4@gmail.com",
     "priceRange": "₹₹",
     "medicalSpecialty": "GeneralPractice",
-    "hasMap": "https://www.google.com/maps?q=Dr.+Ajay+Agrawal+Clinic,+Mathura",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 27.5458,
-      "longitude": 77.6686
-    },
+    "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs",
+    "geo": { "@type": "GeoCoordinates", "latitude": 27.5458, "longitude": 77.6686 },
     "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "09:00",
-        "closes": "14:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "17:00",
-        "closes": "20:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "09:00",
-        "closes": "13:00"
-      }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "13:00" }
     ],
-    "founder": {
-      "@type": "Person",
-      "name": "Dr. Ajay Agrawal"
-    },
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "telephone": "+91-9634274830",
-      "contactType": "customer service",
-      "areaServed": "IN",
-      "availableLanguage": ["en","hi"]
-    }],
-    "sameAs": [
-      "https://share.google/lQuHwBKtXiNIuHic5",
-      "https://www.google.com/maps?q=Dr.+Ajay+Agrawal+Clinic,+Mathura"
-    ]
+    "founder": { "@type": "Person", "name": "Dr. Ajay Agrawal" },
+    "contactPoint": [{ "@type": "ContactPoint", "telephone": "+91-9634274830", "contactType": "customer service", "areaServed": "IN", "availableLanguage": ["en","hi"] }],
+    "sameAs": [ "https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs", "https://maps.app.goo.gl/Qu1h2Z3gReGAkPnG8" ]
   }
   </script>
 
-  <!-- Structured Data: WebSite (with sameAs for GBP) -->
+  <!-- Structured Data: WebSite -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://dr-ajay-agrawal.netlify.app/#website",
-    "name": "Dr. Ajay Agrawal Clinic",
-    "url": "https://dr-ajay-agrawal.netlify.app/",
-    "inLanguage": "en-IN",
-    "sameAs": ["https://share.google/lQuHwBKtXiNIuHic5"]
-  }
+  { "@context": "https://schema.org", "@type": "WebSite", "@id": "https://dr-ajay-agrawal.netlify.app/#website", "name": "Dr. Ajay Agrawal Clinic", "url": "https://dr-ajay-agrawal.netlify.app/", "inLanguage": "en-IN", "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs"] }
+  </script>
+
+  <!-- Structured Data: Physician -->
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Physician", "@id": "https://dr-ajay-agrawal.netlify.app/#physician", "name": "Dr. Ajay Agrawal", "description": "MD Physician with 26+ years of experience in Internal Medicine", "medicalSpecialty": ["GeneralPractice", "InternalMedicine"], "knowsAbout": ["Diabetes", "Hypertension", "Thyroid Disorders", "Infections", "Preventive Care"], "worksFor": { "@id": "https://dr-ajay-agrawal.netlify.app/#clinic" } }
   </script>
 
   <!-- Structured Data: FAQPage -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
+    "@context": "https://schema.org", "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What are the clinic hours?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Monday to Saturday: 9:00 AM–2:00 PM and 5:00 PM–8:00 PM. Sunday: 9:00 AM–1:00 PM. Hours may differ on special days."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I book an appointment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Call 9634274830 or use the Request Appointment button on the website to share your details."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which conditions do you treat?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "General Medicine, diabetes, hypertension, asthma, thyroid disorders, infections/fever, seasonal illnesses, preventive and lifestyle care."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where is the clinic located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, Uttar Pradesh 281006."
-        }
-      }
+      { "@type": "Question", "name": "What are the clinic hours?", "acceptedAnswer": { "@type": "Answer", "text": "Monday to Saturday: 9:00 AM–2:00 PM and 5:00 PM–8:00 PM. Sunday: 9:00 AM–1:00 PM. Hours may differ on special days." } },
+      { "@type": "Question", "name": "How can I book an appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Call 9634274830 or use the Request Appointment button on the website to share your details." } },
+      { "@type": "Question", "name": "Which conditions do you treat?", "acceptedAnswer": { "@type": "Answer", "text": "General Medicine, diabetes, hypertension, asthma, thyroid disorders, infections/fever, seasonal illnesses, preventive and lifestyle care." } },
+      { "@type": "Question", "name": "Where is the clinic located?", "acceptedAnswer": { "@type": "Answer", "text": "Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, Uttar Pradesh 281006." } }
     ]
   }
   </script>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCW1S18B87"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GCW1S18B87');
-  </script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-GCW1S18B87');</script>
 </head>
 
-<body class="font-inter bg-gray-50 text-gray-800">
+<body class="font-inter bg-slate-50 text-gray-800 antialiased">
   <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
-      <!-- Logo and Title Left -->
-      <div class="flex items-center gap-3 mb-4 md:mb-0">
-        <a href="/" onclick="location.reload(); return false;" class="flex items-center group" aria-label="Go to homepage">
-          <img src="Dr-Ajay-Agrawal-Clinic-logo.png" alt="Dr. Ajay Agrawal Clinic Logo - Home"
-               class="h-12 w-12 transition-transform duration-300 group-hover:scale-110 animate__animated animate__fadeInLeft" loading="eager" decoding="async" />
-          <h1 class="ml-2 text-2xl font-bold text-blue-900 group-hover:text-blue-700">Dr. Ajay Agrawal</h1>
-        </a>
-      </div>
+  <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 group" aria-label="Go to homepage">
+        <img src="Dr-Ajay-Agrawal-Clinic-logo.webp" alt="Dr Ajay Agrawal Clinic logo"
+          class="h-10 w-10 rounded-lg shadow-sm group-hover:scale-105 transition-transform" width="40" height="40" />
+        <div class="hidden sm:block">
+          <h1 class="text-lg font-bold text-primary-800 leading-tight">Dr. Ajay Agrawal</h1>
+          <p class="text-xs text-gray-500">MD Physician • Mathura</p>
+        </div>
+      </a>
 
-      <!-- Nav + Buttons Right -->
-      <div class="flex flex-col gap-2 w-full max-w-xs md:max-w-none md:flex-row md:w-auto md:gap-4 items-center">
-        <nav class="flex gap-4 text-sm text-gray-700">
-          <a href="#services" class="hover:text-blue-700" aria-label="Go to services">Services</a>
-          <a href="#about" class="hover:text-blue-700" aria-label="Go to about">About</a>
-          <a href="#testimonials" class="hover:text-blue-700" aria-label="Go to testimonials">Reviews</a>
-          <a href="#contact" class="hover:text-blue-700" aria-label="Go to contact">Contact</a>
-          <a href="/blog/" class="hover:text-blue-700" aria-label="Go to blog">Blogs</a>
-        </nav>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
+        <a href="#services" class="hover:text-primary-600 transition-colors">Services</a>
+        <a href="#about" class="hover:text-primary-600 transition-colors">About</a>
+        <a href="#testimonials" class="hover:text-primary-600 transition-colors">Reviews</a>
+        <a href="#contact" class="hover:text-primary-600 transition-colors">Contact</a>
+        <a href="/blog/" class="hover:text-primary-600 transition-colors">Blog</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
         <a href="tel:+919634274830"
-          class="bg-blue-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 text-center font-medium w-full md:w-auto"
+          class="btn-primary text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2"
           aria-label="Call Now">
-          Call Now
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+            </path>
+          </svg>
+          <span class="hidden sm:inline">Call Now</span>
         </a>
-        <button onclick="document.getElementById('appointment-modal').classList.remove('hidden')" id="request-appointment-btn" class="bg-green-600 text-white px-5 py-2 rounded-md transition duration-300 ease-in-out transform hover:bg-green-700 hover:scale-105 text-center font-medium w-full md:w-auto"
-        aria-label="Request Appointment">  Request Appointment
+        <button onclick="openModal()"
+          class="btn-accent text-white px-4 py-2 rounded-lg text-sm font-semibold hidden sm:flex items-center gap-2"
+          aria-label="Request Appointment">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          Book
         </button>
       </div>
     </div>
-    <div class="text-xs text-gray-500 text-center py-1 bg-gray-50">
-      Call <strong>9634274830</strong> if any option doesn't work.
-    </div>
-    <div class="border-b border-gray-200"></div>
   </header>
 
-  <!-- Appointment Modal -->
-  <div id="appointment-modal"
-     class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden animate__animated animate__fadeIn">
-    <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full relative">
-      <button onclick="document.getElementById('appointment-modal').classList.add('hidden')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl" aria-label="Close appointment form">&times;</button>
-      <h3 class="text-xl font-semibold mb-4">Request an Appointment</h3>
-      <form>
-        <input type="text" placeholder="Your Name" class="w-full mb-3 px-3 py-2 border rounded" required>
-        <input type="email" placeholder="Your Email" class="w-full mb-3 px-3 py-2 border rounded" required>
-        <input type="tel" placeholder="Your Phone" class="w-full mb-3 px-3 py-2 border rounded" required>
-        <textarea placeholder="Your Message" class="w-full mb-3 px-3 py-2 border rounded" rows="3"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded w-full">Send Request</button>
-      </form>
-      <p class="text-xs text-gray-500 mt-2">Or call <span class="font-semibold">9634274830</span> directly.</p>
-    </div>
-  </div>
-
   <!-- Hero Section -->
-  <section class="bg-blue-100 py-12 animate__animated animate__fadeIn">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Experienced MD Physician for General Medicine in Mathura</h2>
-      <p class="text-lg mb-6">Comprehensive care for diabetes, hypertension, thyroid, infections, seasonal illnesses and preventive health.</p>
-      <a href="tel:+919634274830" class="bg-blue-600 text-white px-6 py-3 rounded-md text-lg">Schedule an Appointment</a>
+  <section class="gradient-bg min-h-[90vh] flex items-center pt-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-200 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+      <div class="max-w-3xl">
+        <div
+          class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm mb-6">
+          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          Trusted by 1000+ patients across Mathura
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
+          Expert MD Physician for <span class="text-blue-200">General Medicine</span> in Mathura
+        </h2>
+        <p class="text-lg sm:text-xl text-blue-100 mb-8 max-w-2xl">
+          Comprehensive care for diabetes, hypertension, thyroid, infections, and preventive health. 26+ years of
+          trusted medical expertise.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:+919634274830"
+            class="inline-flex items-center justify-center gap-2 bg-white text-primary-700 px-6 py-4 rounded-xl text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+              </path>
+            </svg>
+            Call 9634274830
+          </a>
+          <button onclick="openModal()"
+            class="inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-6 py-4 rounded-xl text-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            Request Appointment
+          </button>
+        </div>
+        <div class="flex items-center gap-6 mt-10 text-white/80 text-sm">
+          <div class="flex items-center gap-2"><span class="text-2xl">🏥</span> 26+ Years Experience</div>
+          <div class="flex items-center gap-2"><span class="text-2xl">⭐</span> 4.8 Google Rating</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Services Preview -->
-  <section id="services" class="py-12 animate__animated animate__fadeIn">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h3 class="text-2xl font-semibold mb-6">Our Services</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:shadow-xl hover:scale-105">
-          <h4 class="font-bold mb-2">General Check-ups</h4>
-          <p>Routine physical exams and health consultations for all age groups.</p>
+  <!-- Trust Bar -->
+  <section class="bg-white border-b py-6">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 text-center text-sm text-gray-600">
+      <div class="flex items-center gap-2"><span class="text-primary-600 font-bold text-xl">26+</span> Years Experience
+      </div>
+      <div class="flex items-center gap-2"><span class="text-primary-600 font-bold text-xl">5000+</span> Patients
+        Treated</div>
+      <div class="flex items-center gap-2"><span class="text-primary-600 font-bold text-xl">⭐ 4.8</span> Google Rating
+      </div>
+      <div class="flex items-center gap-2"><span class="text-primary-600 font-bold text-xl">MD</span> General Medicine
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-gradient-to-b from-white to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our <span class="gradient-text">Medical
+            Services</span></h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive healthcare for all your medical needs, from routine
+          checkups to chronic disease management.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover">
+          <div class="service-icon bg-blue-100 text-blue-600 mb-4">🩺</div>
+          <h4 class="font-bold text-lg mb-2">General Check-ups</h4>
+          <p class="text-gray-600 text-sm">Routine physical exams and health consultations for all age groups.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:shadow-xl hover:scale-105">
-          <h4 class="font-bold mb-2">Chronic Disease Management</h4>
-          <p>Care for hypertension, diabetes, asthma, thyroid disorders, and more.</p>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover">
+          <div class="service-icon bg-red-100 text-red-600 mb-4">❤️</div>
+          <h4 class="font-bold text-lg mb-2">Chronic Disease Management</h4>
+          <p class="text-gray-600 text-sm">Care for hypertension, diabetes, asthma, thyroid disorders, and more.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:shadow-xl hover:scale-105">
-          <h4 class="font-bold mb-2">Infection &amp; Fever Treatment</h4>
-          <p>Diagnosis and treatment for viral, bacterial, and seasonal infections.</p>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover">
+          <div class="service-icon bg-orange-100 text-orange-600 mb-4">🌡️</div>
+          <h4 class="font-bold text-lg mb-2">Infection & Fever Treatment</h4>
+          <p class="text-gray-600 text-sm">Diagnosis and treatment for viral, bacterial, and seasonal infections.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:shadow-xl hover:scale-105">
-          <h4 class="font-bold mb-2">Lifestyle &amp; Preventive Care</h4>
-          <p>Guidance for healthy living, weight management, and preventive screenings.</p>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover">
+          <div class="service-icon bg-green-100 text-green-600 mb-4">🥗</div>
+          <h4 class="font-bold text-lg mb-2">Lifestyle & Preventive Care</h4>
+          <p class="text-gray-600 text-sm">Guidance for healthy living, weight management, and preventive screenings.
+          </p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:shadow-xl hover:scale-105">
-          <h4 class="font-bold mb-2">Seasonal Disease Treatment</h4>
-          <p>Care for allergies, flu, dengue, malaria, and other seasonal illnesses.</p>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover">
+          <div class="service-icon bg-purple-100 text-purple-600 mb-4">🍂</div>
+          <h4 class="font-bold text-lg mb-2">Seasonal Disease Treatment</h4>
+          <p class="text-gray-600 text-sm">Care for allergies, flu, dengue, malaria, and other seasonal illnesses.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:shadow-xl hover:scale-105">
-          <h4 class="font-bold mb-2">Other Medical Services</h4>
-          <p>Wide range of treatments for acute and chronic conditions.</p>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover">
+          <div class="service-icon bg-cyan-100 text-cyan-600 mb-4">💊</div>
+          <h4 class="font-bold text-lg mb-2">Other Medical Services</h4>
+          <p class="text-gray-600 text-sm">Wide range of treatments for acute and chronic conditions.</p>
         </div>
       </div>
-      <p class="mt-6 text-gray-500 text-sm">If you have a specific concern, feel free to contact us for more information.</p>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="bg-gray-100 py-12">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-4">About Dr. Ajay Agrawal</h3>
-      <p class="mb-4">Dr. Ajay Agrawal is an experienced MD Physician with over 26 years of practice in Internal Medicine and general healthcare, providing compassionate, high-quality care to patients in and around Aurangabad, Mathura.</p>
-      <p class="mb-4">He holds an M.D. degree in General Medicine and follows a patient-first approach, ensuring every individual receives personalized treatment and attention.</p>
-      <p>Located at: <strong>Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, Uttar Pradesh 281006</strong></p>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="py-12">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h3 class="text-2xl font-semibold mb-6">What Our Patients Say</h3>
-      <div class="space-y-6">
-        <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="jitendra-singh-review.png" alt="Google review screenshot by Jitendra Singh for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" decoding="async" />
+  <section id="about" class="py-20 bg-primary-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl sm:text-4xl font-bold mb-6">About <span class="text-blue-300">Dr. Ajay Agrawal</span></h3>
+          <p class="text-blue-100 text-lg mb-6">Dr. Ajay Agrawal is an experienced MD Physician with over 26 years of
+            practice in Internal Medicine and general healthcare, providing compassionate, high-quality care to patients
+            in and around Aurangabad, Mathura.</p>
+          <p class="text-blue-100 mb-6">He holds an M.D. degree in General Medicine and follows a patient-first
+            approach, ensuring every individual receives personalized treatment and attention.</p>
+          <div class="flex flex-wrap gap-4 text-sm">
+            <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">🎓 MD in General Medicine</div>
+            <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">🏆 26+ Years Experience</div>
+            <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">💙 Patient-First Approach</div>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="manoj-kumar-review.png" alt="Google review screenshot by Manoj Kumar for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" decoding="async" />
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="tripti-chaturvedi-review.png" alt="Google review screenshot by Tripti Chaturvedi for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" decoding="async" />
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="amitk-noriya-review.png" alt="Google review screenshot by Amitk Noriya for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" decoding="async" />
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md flex justify-center">
-          <img src="uday-kumar-chaudhary-review.png" alt="Google review screenshot by Uday Kumar Chaudhary for Dr. Ajay Agrawal Clinic"
-               class="max-w-full md:max-w-lg rounded-lg shadow transition duration-300 hover:scale-105" loading="lazy" decoding="async" />
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+          <h4 class="text-xl font-bold mb-4">📍 Clinic Location</h4>
+          <p class="text-blue-100 mb-6">Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, Uttar Pradesh
+            281006</p>
+          <a href="https://maps.app.goo.gl/Qu1h2Z3gReGAkPnG8" target="_blank" rel="noopener"
+            class="btn-primary inline-flex items-center gap-2 text-white px-5 py-3 rounded-lg font-semibold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            Get Directions
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section (visible content to support FAQPage schema) -->
-  <section class="bg-gray-50 py-12">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-6">Frequently Asked Questions</h3>
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">What Our <span class="gradient-text">Patients
+            Say</span></h3>
+        <p class="text-gray-600">Real reviews from our valued patients on Google</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <figure class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover">
+          <img src="jitendra-singh-review.webp"
+            alt="Google review by Jitendra Singh - 5 stars - praising Dr. Ajay Agrawal" class="w-full rounded-xl"
+            loading="lazy" />
+          <figcaption class="sr-only">Verified Google review by Jitendra Singh</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover">
+          <img src="manoj-kumar-review.webp" alt="Google review by Manoj Kumar - 5 stars - praising Dr. Ajay Agrawal"
+            class="w-full rounded-xl" loading="lazy" />
+          <figcaption class="sr-only">Verified Google review by Manoj Kumar</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover">
+          <img src="tripti-chaturvedi-review.webp" alt="Google review by Tripti Chaturvedi - 5 stars"
+            class="w-full rounded-xl" loading="lazy" />
+          <figcaption class="sr-only">Verified Google review by Tripti Chaturvedi</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover">
+          <img src="amitk-noriya-review.webp" alt="Google review by Amitk Noriya - 5 stars" class="w-full rounded-xl"
+            loading="lazy" />
+          <figcaption class="sr-only">Verified Google review by Amitk Noriya</figcaption>
+        </figure>
+        <figure
+          class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover sm:col-span-2 lg:col-span-1">
+          <img src="uday-kumar-chaudhary-review.webp" alt="Google review by Uday Kumar Chaudhary - 5 stars"
+            class="w-full rounded-xl" loading="lazy" />
+          <figcaption class="sr-only">Verified Google review by Uday Kumar Chaudhary</figcaption>
+        </figure>
+        <div
+          class="bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl p-6 text-white flex flex-col justify-center items-center text-center">
+          <span class="text-4xl mb-3">⭐</span>
+          <h4 class="font-bold text-xl mb-2">Share Your Experience</h4>
+          <p class="text-blue-100 text-sm mb-4">Help others by leaving a review</p>
+          <a href="https://search.google.com/local/writereview?placeid=ChIJ09YTLztxczkRP4O_cwlm0Gs" target="_blank"
+            rel="noopener"
+            class="bg-white text-primary-700 px-5 py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+            Leave a Google Review
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Latest <span class="gradient-text">Health
+            Tips</span></h3>
+        <p class="text-gray-600">Expert medical advice from Dr. Ajay Agrawal</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/blog/preventive-health-checkups-annual.html"
+          class="group bg-slate-50 rounded-2xl overflow-hidden border border-gray-100 card-hover">
+          <img src="/assets/img/blog/preventive-health-checkup.webp" alt="Preventive health checkups"
+            class="w-full h-48 object-cover" loading="lazy" />
+          <div class="p-5">
+            <h4 class="font-bold text-lg mb-2 group-hover:text-primary-600 transition-colors">Preventive Health Checkups
+            </h4>
+            <p class="text-gray-600 text-sm">Annual checkup checklist every adult should follow.</p>
+          </div>
+        </a>
+        <a href="/blog/stress-management-working-professionals.html"
+          class="group bg-slate-50 rounded-2xl overflow-hidden border border-gray-100 card-hover">
+          <img src="/assets/img/blog/stress-management-professional.webp" alt="Stress management"
+            class="w-full h-48 object-cover" loading="lazy" />
+          <div class="p-5">
+            <h4 class="font-bold text-lg mb-2 group-hover:text-primary-600 transition-colors">Stress Management
+              Techniques</h4>
+            <p class="text-gray-600 text-sm">Practical tips for working professionals.</p>
+          </div>
+        </a>
+        <a href="/blog/adolescent-mental-health-early-warning-signs.html"
+          class="group bg-slate-50 rounded-2xl overflow-hidden border border-gray-100 card-hover">
+          <img src="/assets/img/blog/adolescent-mental-health.webp" alt="Teen mental health"
+            class="w-full h-48 object-cover" loading="lazy" />
+          <div class="p-5">
+            <h4 class="font-bold text-lg mb-2 group-hover:text-primary-600 transition-colors">Adolescent Mental Health
+            </h4>
+            <p class="text-gray-600 text-sm">Early warning signs parents should know.</p>
+          </div>
+        </a>
+      </div>
+      <div class="text-center mt-8">
+        <a href="/blog/" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700">
+          View All Articles
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Frequently Asked <span
+            class="gradient-text">Questions</span></h3>
+      </div>
       <div class="space-y-4">
-        <details class="bg-white rounded-lg shadow p-4">
-          <summary class="font-semibold cursor-pointer">What are the clinic hours?</summary>
-          <p class="mt-2 text-gray-700">Monday–Saturday: 9:00 AM–2:00 PM and 5:00 PM–8:00 PM. Sunday: 9:00 AM–1:00 PM. Hours may differ on special days.</p>
+        <details class="bg-white rounded-xl shadow-sm border border-gray-100 group" open>
+          <summary class="flex items-center justify-between p-5 font-semibold cursor-pointer">
+            <span>What are the clinic hours?</span>
+            <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="px-5 pb-5 text-gray-600">Monday–Saturday: 9:00 AM–2:00 PM and 5:00 PM–8:00 PM. Sunday: 9:00 AM–1:00
+            PM. Hours may differ on special days.</p>
         </details>
-        <details class="bg-white rounded-lg shadow p-4">
-          <summary class="font-semibold cursor-pointer">How can I book an appointment?</summary>
-          <p class="mt-2 text-gray-700">Use the “Request Appointment” button or call <a href="tel:+919634274830" class="text-blue-700 underline">9634274830</a>.</p>
+        <details class="bg-white rounded-xl shadow-sm border border-gray-100 group">
+          <summary class="flex items-center justify-between p-5 font-semibold cursor-pointer">
+            <span>How can I book an appointment?</span>
+            <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="px-5 pb-5 text-gray-600">Use the "Request Appointment" button or call <a href="tel:+919634274830"
+              class="text-primary-600 font-semibold">9634274830</a>.</p>
         </details>
-        <details class="bg-white rounded-lg shadow p-4">
-          <summary class="font-semibold cursor-pointer">Which conditions do you treat?</summary>
-          <p class="mt-2 text-gray-700">General Medicine, diabetes, hypertension, asthma, thyroid disorders, infections/fever, seasonal illnesses, preventive and lifestyle care.</p>
+        <details class="bg-white rounded-xl shadow-sm border border-gray-100 group">
+          <summary class="flex items-center justify-between p-5 font-semibold cursor-pointer">
+            <span>Which conditions do you treat?</span>
+            <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="px-5 pb-5 text-gray-600">General Medicine, diabetes, hypertension, asthma, thyroid disorders,
+            infections/fever, seasonal illnesses, preventive and lifestyle care.</p>
         </details>
-        <details class="bg-white rounded-lg shadow p-4">
-          <summary class="font-semibold cursor-pointer">Where is the clinic located?</summary>
-          <p class="mt-2 text-gray-700">Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, UP 281006.</p>
+        <details class="bg-white rounded-xl shadow-sm border border-gray-100 group">
+          <summary class="flex items-center justify-between p-5 font-semibold cursor-pointer">
+            <span>Where is the clinic located?</span>
+            <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <p class="px-5 pb-5 text-gray-600">Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, UP 281006.
+          </p>
         </details>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-blue-50 py-12">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
-      <p class="mb-2">📍 <strong>Address:</strong> Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, UP 281006</p>
-      <p class="mb-2">📞 <strong>Phone:</strong> <a href="tel:+919634274830" class="text-blue-600">9634274830</a> (Call &amp; WhatsApp)</p>
-      <p class="mb-2">✉️ <strong>Email:</strong> <a href="mailto:agrawalanush4@gmail.com" class="text-blue-600">agrawalanush4@gmail.com</a></p>
-      <div class="flex flex-wrap gap-3 my-4">
-        <a href="https://share.google/lQuHwBKtXiNIuHic5" target="_blank" rel="noopener" class="inline-block bg-white border border-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-blue-50">View on Google</a>
-        <a href="https://www.google.com/maps?q=Dr.+Ajay+Agrawal+Clinic,+Mathura" target="_blank" rel="noopener" class="inline-block bg-white border border-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-blue-50">Get Directions</a>
-        <a href="https://share.google/lQuHwBKtXiNIuHic5" target="_blank" rel="noopener" class="inline-block bg-white border border-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-blue-50">Read Google Reviews</a>
-      </div>
-      <p class="mb-4">🕒 <strong>Hours:</strong></p>
-      <ul class="mb-4 ml-4 text-sm">
-        <li><strong>Monday:</strong> 9 am–2 pm, 5–8 pm</li>
-        <li><strong>Tuesday:</strong> 9 am–2 pm, 5–8 pm</li>
-        <li><strong>Wednesday:</strong> 9 am–2 pm, 5–8 pm</li>
-        <li><strong>Thursday:</strong> 9 am–2 pm, 5–8 pm</li>
-        <li><strong>Friday:</strong> 9 am–2 pm, 5–8 pm</li>
-        <li><strong>Saturday:</strong> 9 am–2 pm, 5–8 pm</li>
-        <li><strong>Sunday:</strong> 9 am–1 pm</li>
-        <li><span class="text-yellow-700">Special days (e.g. Raksha Bandhan): Hours might differ</span></li>
-      </ul>
-      <div class="mb-4">
-        <iframe
-          class="w-full h-64 rounded-lg"
-          src="https://www.google.com/maps?q=Dr.+Ajay+Agrawal+Clinic,+Mathura&output=embed"
-          allowfullscreen
-          loading="lazy"
-          title="Google Map showing Dr. Ajay Agrawal Clinic location"
-          aria-label="Google Map showing Dr. Ajay Agrawal Clinic location"
-        ></iframe>
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Get In <span class="gradient-text">Touch</span>
+          </h3>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-xl">📍</div>
+              <div>
+                <h4 class="font-semibold">Address</h4>
+                <p class="text-gray-600">Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, UP 281006</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-xl">📞</div>
+              <div>
+                <h4 class="font-semibold">Phone & WhatsApp</h4>
+                <a href="tel:+919634274830" class="text-primary-600 font-semibold">9634274830</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-xl">✉️</div>
+              <div>
+                <h4 class="font-semibold">Email</h4>
+                <a href="mailto:agrawalanush4@gmail.com" class="text-primary-600">agrawalanush4@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-xl">🕒</div>
+              <div>
+                <h4 class="font-semibold">Clinic Hours</h4>
+                <p class="text-gray-600 text-sm">Mon-Sat: 9 AM–2 PM, 5–8 PM<br>Sunday: 9 AM–1 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <a href="https://maps.app.goo.gl/Qu1h2Z3gReGAkPnG8" target="_blank" rel="noopener"
+              class="btn-primary text-white px-5 py-3 rounded-lg font-semibold">Get Directions</a>
+            <a href="https://search.google.com/local/writereview?placeid=ChIJ09YTLztxczkRP4O_cwlm0Gs" target="_blank"
+              rel="noopener"
+              class="bg-yellow-500 text-white px-5 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">⭐
+              Leave Review</a>
+          </div>
+        </div>
+        <div class="bg-slate-100 rounded-2xl overflow-hidden h-80 lg:h-auto">
+          <iframe class="w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.5!2d77.6686!3d27.5458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDMyJzQ1LjAiTiA3N8KwNDAnMDcuMCJF!5e0!3m2!1sen!2sin!4v1"
+            allowfullscreen loading="lazy" title="Google Map showing Dr. Ajay Agrawal Clinic location"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white text-center py-6 border-t">
-    <p class="text-sm">&copy; 2025 Dr. Ajay Agrawal Clinic, Aurangabad, Mathura. All rights reserved.</p>
-    <p class="text-xs text-gray-500">MD Physician | General Medicine in Mathura</p>
-    <p class="text-xs"><a href="/blog/" class="text-blue-700 hover:underline">Blogs</a></p>
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="Dr-Ajay-Agrawal-Clinic-logo.webp" alt="Clinic logo" class="h-10 w-10 rounded-lg" width="40"
+              height="40" />
+            <span class="font-bold">Dr. Ajay Agrawal</span>
+          </div>
+          <p class="text-gray-400 text-sm">MD Physician providing quality healthcare in Mathura since 1999.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors">Reviews</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>General Medicine</li>
+            <li>Diabetes Care</li>
+            <li>Hypertension</li>
+            <li>Thyroid Disorders</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="tel:+919634274830" class="hover:text-white transition-colors">📞 9634274830</a></li>
+            <li>📍 Aurangabad, Mathura</li>
+            <li>🕒 9 AM – 8 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+        <p>© 2025 Dr. Ajay Agrawal Clinic, Aurangabad, Mathura. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
-  <!-- Analytics event handlers: call clicks and appointment open/submit (minimal) -->
+
+  <!-- Appointment Modal -->
+  <div id="appointment-modal"
+    class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 hidden overflow-y-auto p-4"
+    role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 max-w-md w-full relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal()"
+        class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+        aria-label="Close">
+        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <h3 id="modal-title" class="text-2xl font-bold mb-6">Request Appointment</h3>
+      <form>
+        <div class="space-y-4">
+          <input type="text" placeholder="Your Name"
+            class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+            required>
+          <input type="tel" placeholder="Your Phone"
+            class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+            required>
+          <textarea placeholder="Briefly describe your concern"
+            class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all resize-none"
+            rows="3"></textarea>
+          <button type="submit" class="w-full btn-primary text-white py-3 rounded-xl font-semibold">Send
+            Request</button>
+        </div>
+      </form>
+      <p class="text-center text-gray-500 text-sm mt-4">Or call directly: <a href="tel:+919634274830"
+          class="text-primary-600 font-semibold">9634274830</a></p>
+    </div>
+  </div>
 
   <script>
-   (function(){
-    // Delegate tel: clicks and send call_click event
-    document.addEventListener('click', function(e){
+    function openModal() { document.getElementById('appointment-modal').classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
+    function closeModal() { document.getElementById('appointment-modal').classList.add('hidden'); document.body.style.overflow = ''; }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+    document.getElementById('appointment-modal').addEventListener('click', (e) => { if (e.target === e.currentTarget) closeModal(); });
+
+    // Analytics
+    document.addEventListener('click', function (e) {
       try {
         var a = e.target.closest && e.target.closest('a[href^="tel:"]');
-        if (a && window.gtag) {
-          gtag('event', 'call_click', {
-            'event_category': 'engagement',
-            'event_label': a.getAttribute('href')
-          });
-        }
-
-        // Appointment open: button opening the modal (id fallback + aria-label)
-        var apptBtn = e.target.closest && e.target.closest('#request-appointment-btn, button[aria-label="Request Appointment"]');
-        if (apptBtn && window.gtag) {
-          gtag('event', 'appointment_open', {
-            'event_category': 'engagement',
-            'event_label': 'appointment_open'
-          });
-        }
-      } catch(err) {
-        console && console.warn && console.warn('gtag handler error', err);
-      }
-    }, false);
-
-    // Track appointment form submission inside modal
-    var apptForm = document.querySelector && document.querySelector('#appointment-modal form');
-    if (apptForm) {
-      apptForm.addEventListener('submit', function(){
-        try {
-          if (window.gtag) {
-            gtag('event', 'appointment_submit', {
-              'event_category': 'conversion',
-              'event_label': 'appointment_form'
-            });
-          }
-        } catch(err) {
-          console && console.warn && console.warn('gtag submit error', err);
-        }
-      });
-    }
-  })();
-
+        if (a && window.gtag) { gtag('event', 'call_click', { 'event_category': 'engagement', 'event_label': a.getAttribute('href') }); }
+      } catch (err) { }
+    });
   </script>
-  
 </body>
+
 </html>
-
-
-
-
-
