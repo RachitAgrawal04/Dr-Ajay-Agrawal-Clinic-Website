@@ -220,7 +220,6 @@ Follow `blog/README.md`. In short:
 
 ## Weaknesses (what’s missing / what can break)
 
-This section is intentionally detailed and candid — it’s the fastest path to “professional-grade”.
 
 ### 1) The appointment form is UI-only (no backend)
 
@@ -295,54 +294,6 @@ Even with a strong baseline, there are gaps:
 - No “FAQ by service” pages
 - Blog doesn’t expose RSS feed
 - Sitemap `lastmod` requires manual updates
-
----
-
-## Roadmap: make it award-winning (professional grade)
-
-Below is a concrete upgrade checklist, ordered by impact.
-
-### Tier 1 (highest impact)
-
-1. **Make appointment requests actually work**
-   - Use Netlify Forms, Formspree, or a serverless function
-   - Add client-side validation, success/failure UI, and spam protection (honeypot + rate limiting)
-   - Add WhatsApp booking deep link as fallback
-
-2. **Fix `_headers.txt` and add proper security/performance headers**
-   - Add long-term caching for immutable assets (images)
-   - Add `Content-Security-Policy`, `X-Frame-Options`/`frame-ancestors`, `Referrer-Policy`, `Permissions-Policy`, `Strict-Transport-Security`
-
-3. **Align structured data with real media assets**
-   - Update `BlogPosting.image` to the local WebP URL used on the page
-   - Consider adding `BreadcrumbList` schema to blog posts
-
-### Tier 2 (polish + trust)
-
-1. **Modal accessibility**
-   - Add focus trap, ESC close, ARIA dialog semantics
-   - Ensure keyboard-only navigation works
-
-2. **Add trust/compliance pages**
-   - Privacy policy + analytics disclosure
-   - Medical disclaimer for blog content
-   - Terms / contact expectations
-
-3. **Improve reviews section**
-   - Optional: embed a Google review widget or a curated testimonials section (ensure compliance with Google policies)
-   - Add “case-study style” anonymized outcomes (with explicit patient consent)
-
-### Tier 3 (engineering excellence)
-
-1. **Introduce a build step (still static, but optimized)**
-   - Switch Tailwind to a build pipeline (Tailwind CLI/Vite)
-   - Purge unused CSS, minify HTML, add asset hashing
-   - Add CI checks (lint/format), automated sitemap generation
-
-2. **Performance extras**
-   - Preload hero font + key CSS
-   - Ensure images use correct `sizes` and `srcset`
-   - Consider self-hosting critical assets (fonts) for consistency
 
 ---
 
