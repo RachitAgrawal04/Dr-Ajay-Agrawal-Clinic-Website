@@ -26,7 +26,7 @@
   <meta property="og:locale" content="en_IN" />
   <meta property="og:title" content="Dr Ajay Agrawal – MD Physician Mathura | Best Doctor" />
   <meta property="og:description"
-    content="Trusted MD Physician in Aurangabad, Mathura with 26+ years experience. Diabetes, hypertension, thyroid care. ⭐ 4.8 rating. Book: 9634274830" />
+    content="Trusted Doctor (MD Physician) in Aurangabad, Mathura with 26+ years experience. Diabetes, hypertension, thyroid care. ⭐ 4.8 rating. Book: 9634274830" />
   <meta property="og:url" content="https://dr-ajay-agrawal.netlify.app/" />
   <meta property="og:image"
     content="https://dr-ajay-agrawal.netlify.app/assets/img/logo/Dr-Ajay-Agrawal-Clinic-logo.png" />
@@ -36,7 +36,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dr Ajay Agrawal – MD Physician Mathura | Best Doctor">
   <meta name="twitter:description"
-    content="Trusted MD Physician in Aurangabad, Mathura with 26+ years experience. ⭐ 4.8 rating. Book: 9634274830">
+    content="Trusted Doctor (MD Physician) in Aurangabad, Mathura with 26+ years experience. ⭐ 4.9 rating. Book: 9634274830">
   <meta name="twitter:image"
     content="https://dr-ajay-agrawal.netlify.app/assets/img/logo/Dr-Ajay-Agrawal-Clinic-logo.png">
   <meta name="twitter:image:alt" content="Dr. Ajay Agrawal Clinic Logo">
@@ -140,17 +140,47 @@
     }
   </style>
 
-  <!-- Structured Data: MedicalClinic + GBP sameAs -->
+  <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalClinic",
+    "@type": "Organization",
+    "@id": "https://dr-ajay-agrawal.netlify.app/#organization",
+    "name": "Dr. Ajay Agrawal Clinic",
+    "url": "https://dr-ajay-agrawal.netlify.app/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dr-ajay-agrawal.netlify.app/assets/img/logo/Dr-Ajay-Agrawal-Clinic-logo.png",
+      "width": 200,
+      "height": 200
+    },
+    "image": "https://dr-ajay-agrawal.netlify.app/assets/img/logo/Dr-Ajay-Agrawal-Clinic-logo.png",
+    "description": "Trusted MD Physician clinic in Aurangabad, Mathura with 26+ years experience.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-9634274830",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["en", "hi"]
+    },
+    "sameAs": [
+      "https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs",
+      "https://maps.app.goo.gl/Qu1h2Z3gReGAkPnG8"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: MedicalBusiness + MedicalClinic -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "MedicalClinic"],
     "@id": "https://dr-ajay-agrawal.netlify.app/#clinic",
     "name": "Dr. Ajay Agrawal Clinic",
     "url": "https://dr-ajay-agrawal.netlify.app/",
     "logo": "https://dr-ajay-agrawal.netlify.app/assets/img/logo/Dr-Ajay-Agrawal-Clinic-logo.png",
     "image": "https://dr-ajay-agrawal.netlify.app/assets/img/logo/Dr-Ajay-Agrawal-Clinic-logo.png",
-    "description": "Trusted MD Physician clinic in Aurangabad, Mathura. 26+ years experience in General Medicine, diabetes, hypertension, thyroid, infections and preventive care.",
+    "description": "Trusted Doctor (MD Physician) in Aurangabad, Mathura. 26+ years experience in General Medicine, diabetes, hypertension, thyroid, infections and preventive care.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Main Market, in front of Kela Devi Temple, Aurangabad",
@@ -159,51 +189,100 @@
       "postalCode": "281006",
       "addressCountry": "IN"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.5458,
+      "longitude": 77.6686
+    },
     "areaServed": { "@type": "AdministrativeArea", "name": "Mathura, Uttar Pradesh" },
     "telephone": "+91-9634274830",
     "email": "agrawalanush4@gmail.com",
-    "priceRange": "₹200-₹500",
+    "priceRange": "₹300-₹500",
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash, UPI",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "150",
+      "ratingValue": "4.9",
+      "reviewCount": "276",
       "bestRating": "5",
       "worstRating": "1"
     },
     "medicalSpecialty": ["GeneralPractice", "InternalMedicine"],
     "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs",
-    "geo": { "@type": "GeoCoordinates", "latitude": 27.5458, "longitude": 77.6686 },
     "openingHoursSpecification": [
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "14:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:00", "closes": "20:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "13:00" }
     ],
-    "founder": { "@type": "Person", "name": "Dr. Ajay Agrawal" },
-    "contactPoint": [{ "@type": "ContactPoint", "telephone": "+91-9634274830", "contactType": "customer service", "areaServed": "IN", "availableLanguage": ["en","hi"] }],
-    "sameAs": [ "https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs", "https://maps.app.goo.gl/Qu1h2Z3gReGAkPnG8" ]
+    "founder": { "@id": "https://dr-ajay-agrawal.netlify.app/#physician" },
+    "parentOrganization": { "@id": "https://dr-ajay-agrawal.netlify.app/#organization" },
+    "sameAs": [
+      "https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs",
+      "https://maps.app.goo.gl/Qu1h2Z3gReGAkPnG8"
+    ]
   }
   </script>
 
   <!-- Structured Data: WebSite -->
   <script type="application/ld+json">
-  { "@context": "https://schema.org", "@type": "WebSite", "@id": "https://dr-ajay-agrawal.netlify.app/#website", "name": "Dr. Ajay Agrawal Clinic", "url": "https://dr-ajay-agrawal.netlify.app/", "inLanguage": "en-IN", "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs"] }
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://dr-ajay-agrawal.netlify.app/#website",
+    "name": "Dr. Ajay Agrawal Clinic",
+    "url": "https://dr-ajay-agrawal.netlify.app/",
+    "inLanguage": "en-IN",
+    "publisher": { "@id": "https://dr-ajay-agrawal.netlify.app/#organization" }
+  }
   </script>
 
   <!-- Structured Data: Physician -->
   <script type="application/ld+json">
-  { "@context": "https://schema.org", "@type": "Physician", "@id": "https://dr-ajay-agrawal.netlify.app/#physician", "name": "Dr. Ajay Agrawal", "description": "MD Physician with 26+ years of experience in Internal Medicine", "medicalSpecialty": ["GeneralPractice", "InternalMedicine"], "knowsAbout": ["Diabetes", "Hypertension", "Thyroid Disorders", "Infections", "Preventive Care"], "worksFor": { "@id": "https://dr-ajay-agrawal.netlify.app/#clinic" } }
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "@id": "https://dr-ajay-agrawal.netlify.app/#physician",
+    "name": "Dr. Ajay Agrawal",
+    "givenName": "Ajay",
+    "familyName": "Agrawal",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "MD Physician",
+    "description": "MD Physician with 26+ years of experience in Internal Medicine. Best doctor in Mathura for diabetes, hypertension, thyroid, and general medicine.",
+    "image": "https://dr-ajay-agrawal.netlify.app/assets/img/logo/Dr-Ajay-Agrawal-Clinic-logo.png",
+    "telephone": "+91-9634274830",
+    "email": "agrawalanush4@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Main Market, in front of Kela Devi Temple, Aurangabad",
+      "addressLocality": "Mathura",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "281006",
+      "addressCountry": "IN"
+    },
+    "medicalSpecialty": ["GeneralPractice", "InternalMedicine"],
+    "knowsAbout": ["Diabetes", "Hypertension", "Thyroid Disorders", "Infections", "Preventive Care"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "276",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "worksFor": { "@id": "https://dr-ajay-agrawal.netlify.app/#clinic" },
+    "memberOf": { "@id": "https://dr-ajay-agrawal.netlify.app/#organization" },
+    "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJ09YTLztxczkRP4O_cwlm0Gs"]
+  }
   </script>
 
   <!-- Structured Data: FAQPage (People Also Ask Optimized) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org", "@type": "FAQPage",
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Who is the best general physician in Mathura?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Ajay Agrawal is a trusted MD Physician in Aurangabad, Mathura with 26+ years of experience. He has a 4.8-star Google rating and specializes in diabetes, hypertension, thyroid, and general medicine." } },
+      { "@type": "Question", "name": "Who is the best general physician in Mathura?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Ajay Agrawal is the best doctor in Mathura with 26+ years of experience. He has a 4.9-star Google rating and specializes in diabetes, hypertension, thyroid, and general medicine." } },
       { "@type": "Question", "name": "What are Dr. Ajay Agrawal's clinic timings?", "acceptedAnswer": { "@type": "Answer", "text": "Monday to Saturday: 9:00 AM–2:00 PM and 5:00 PM–8:00 PM. Sunday: 9:00 AM–1:00 PM. Hours may differ on special occasions." } },
-      { "@type": "Question", "name": "How much does a doctor consultation cost in Mathura?", "acceptedAnswer": { "@type": "Answer", "text": "Consultation fees at Dr. Ajay Agrawal Clinic range from ₹200 to ₹500 depending on the type of visit. Payment is accepted via cash and UPI." } },
+      { "@type": "Question", "name": "How much does a doctor consultation cost in Mathura?", "acceptedAnswer": { "@type": "Answer", "text": "Consultation fees at Dr. Ajay Agrawal Clinic range from ₹300 to ₹500 depending on the type of visit. Payment is accepted via cash and UPI." } },
       { "@type": "Question", "name": "Is Dr. Ajay Agrawal a verified MD doctor?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Dr. Ajay Agrawal holds an M.D. degree in General Medicine and has been practicing Internal Medicine for over 26 years in Mathura." } },
       { "@type": "Question", "name": "How can I book an appointment with Dr. Ajay Agrawal?", "acceptedAnswer": { "@type": "Answer", "text": "Call 9634274830 or use the Request Appointment button on the website. Walk-ins are also welcome during clinic hours." } },
       { "@type": "Question", "name": "Where is Dr. Ajay Agrawal Clinic located?", "acceptedAnswer": { "@type": "Answer", "text": "Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, Uttar Pradesh 281006. Get directions on Google Maps." } }
@@ -234,7 +313,7 @@
         <a href="#about" class="hover:text-primary-600 transition-colors">About</a>
         <a href="#testimonials" class="hover:text-primary-600 transition-colors">Reviews</a>
         <a href="#contact" class="hover:text-primary-600 transition-colors">Contact</a>
-        <a href="/blog/" class="hover:text-primary-600 transition-colors">Blog</a>
+        <a href="/blog/" class="hover:text-primary-600 transition-colors">Blogs</a>
       </nav>
 
       <div class="flex items-center gap-2">
@@ -302,7 +381,7 @@
         </div>
         <div class="flex items-center gap-6 mt-10 text-white/80 text-sm">
           <div class="flex items-center gap-2"><span class="text-2xl">🏥</span> 26+ Years Experience</div>
-          <div class="flex items-center gap-2"><span class="text-2xl">⭐</span> 4.8 Google Rating</div>
+          <div class="flex items-center gap-2"><span class="text-2xl">⭐</span> 4.9 Google Rating</div>
         </div>
       </div>
     </div>
@@ -315,7 +394,7 @@
       </div>
       <div class="flex items-center gap-2"><span class="text-primary-600 font-bold text-xl">5000+</span> Patients
         Treated</div>
-      <div class="flex items-center gap-2"><span class="text-primary-600 font-bold text-xl">⭐ 4.8</span> Google Rating
+      <div class="flex items-center gap-2"><span class="text-primary-600 font-bold text-xl">⭐ 4.9</span> Google Rating
       </div>
       <div class="flex items-center gap-2"><span class="text-primary-600 font-bold text-xl">MD</span> General Medicine
       </div>
@@ -461,7 +540,7 @@
       <div class="text-center mb-12">
         <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Latest <span class="gradient-text">Health
             Tips</span></h3>
-        <p class="text-gray-600">Expert medical advice from Dr. Ajay Agrawal</p>
+        <p class="text-gray-600">Expert medical advice from Dr. Ajay</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <a href="/blog/how-to-read-blood-test-results.html"
@@ -523,8 +602,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
-          <p class="px-5 pb-5 text-gray-600">Dr. Ajay Agrawal is a trusted MD Physician in Aurangabad, Mathura with 26+
-            years of experience. He has a 4.8-star Google rating and specializes in diabetes, hypertension, thyroid, and
+          <p class="px-5 pb-5 text-gray-600">Dr. Ajay Agrawal is the best doctor in Mathura, with 26+
+            years of experience. He has a 4.9-star Google rating and specializes in diabetes, hypertension, thyroid, and
             general medicine.</p>
         </details>
         <details class="bg-white rounded-xl shadow-sm border border-gray-100 group">
@@ -546,7 +625,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
-          <p class="px-5 pb-5 text-gray-600">Consultation fees at Dr. Ajay Agrawal Clinic range from ₹200 to ₹500
+          <p class="px-5 pb-5 text-gray-600">Consultation fees at Dr. Ajay Agrawal Clinic ranges from ₹300 to ₹500
             depending on the type of visit. Payment is accepted via cash and UPI.</p>
         </details>
         <details class="bg-white rounded-xl shadow-sm border border-gray-100 group">
@@ -582,7 +661,8 @@
           </summary>
           <p class="px-5 pb-5 text-gray-600">Main Market, in front of Kela Devi Temple, Aurangabad, Mathura, UP 281006.
             <a href="https://maps.app.goo.gl/Qu1h2Z3gReGAkPnG8" target="_blank" rel="noopener"
-              class="text-primary-600 font-semibold">Get directions on Google Maps</a>.</p>
+              class="text-primary-600 font-semibold">Get directions on Google Maps</a>.
+          </p>
         </details>
       </div>
     </div>
